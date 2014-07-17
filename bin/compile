@@ -124,15 +124,15 @@ curl https://install.meteor.com | HOME="$VENDORED_METEOR" /bin/sh | indent
 echo "Meteor installed" | indent
 
 echo "Installing packages" | indent
-HOME="$BUILD_DIR" mrt add spin | indent
-HOME="$BUILD_DIR" mrt add blaze-layout | indent
-HOME="$BUILD_DIR" mrt add luma-component | indent
-HOME="$BUILD_DIR" mrt add jquery-datatables | indent
-HOME="$BUILD_DIR" mrt add highcharts | indent
-HOME="$BUILD_DIR" mrt add moment | indent
-HOME="$BUILD_DIR" mrt add blocking | indent
-HOME="$BUILD_DIR" mrt add aws-sdk | indent
-HOME="$BUILD_DIR" mrt add iron-router | indent
+HOME="$BUILD_DIR" meteor add spin | indent
+HOME="$BUILD_DIR" meteor add blaze-layout | indent
+HOME="$BUILD_DIR" meteor add luma-component | indent
+HOME="$BUILD_DIR" meteor add jquery-datatables | indent
+HOME="$BUILD_DIR" meteor add highcharts | indent
+HOME="$BUILD_DIR" meteor add moment | indent
+HOME="$BUILD_DIR" meteor add blocking | indent
+HOME="$BUILD_DIR" meteor add aws-sdk | indent
+HOME="$BUILD_DIR" meteor add iron-router | indent
 HOME="$BUILD_DIR" mrt update | indent
 HOME="$BUILD_DIR" mrt install --force | indent
 echo "Building meteor bundle" | indent
